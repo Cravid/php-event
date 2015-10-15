@@ -1,2 +1,2 @@
 # php-event
-An event library for php using decorator and observer pattern.
+A simple lightweight PHP event library using publish-subscriber pattern
