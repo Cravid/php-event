@@ -4,16 +4,6 @@ namespace Cravid\Event;
 
 trait DecoratorTrait
 {
-	/**
-     * @var int
-     */
-    const EARLY_EVENT = 512;
-    
-    /**
-     * @var int
-     */
-    const LATE_EVENT = -512;
-
     /**
      * @var DispatcherInterface
      */
