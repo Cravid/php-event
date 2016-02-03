@@ -84,12 +84,12 @@ class Dispatcher implements DispatcherInterface
         $event->setName($eventName);
         $event->setDispatcher($this);
 
-        if (isset($this->listener[$eventName])) {
-            foreach ($this->listener[$eventName] as $priority => $listeners)
+        if (isset($this->listeners[$eventName])) {
+            foreach ($this->listeners[$eventName] as $priority => $listeners)
             {
                 foreach ($listeners as $key => $listener)
                 {
-                    $this->listener->inform($event);
+                    $listener->notify($event);
 
                     if ($event->isPropagationStopped()) {
                         break;
