@@ -97,6 +97,10 @@ class Dispatcher implements DispatcherInterface
                         break;
                     }
                 }
+                
+                if ($event->isPropagationStopped()) {
+                    break;
+                }
             }
         }
         
