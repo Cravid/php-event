@@ -2,7 +2,7 @@
 
 namespace Cravid\Event;
 
-class Event
+class Event implements EventInterface
 {
     /**
      * @var string
