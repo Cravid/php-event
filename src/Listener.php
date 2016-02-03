@@ -23,7 +23,7 @@ class Listener implements ListenerInterface
         $this->eventName = $eventName;
 
         if ($callback === null) {
-            $callback = function () {};
+            $callback = function (Event $event, ListenerInterface $listener) {};
         }
 
         $this->callback = $callback;
