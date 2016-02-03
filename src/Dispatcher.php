@@ -24,6 +24,8 @@ class Dispatcher implements DispatcherInterface
         }
 
         $this->listeners[$eventName][$priority][] = $listener;
+        
+        ksort($this->listeners[$eventName], SORT_NUMERIC);
 
         return $this;
     }
