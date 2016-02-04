@@ -68,7 +68,7 @@ class Dispatcher implements DispatcherInterface
         }
 
         if (!isset($this->listeners[$eventName])) {
-            throw new EventException(sprintf('No listener for event "%s" found in dispatcher.', $eventName));
+            return array();
         }
 
         return $this->listeners[$eventName];
