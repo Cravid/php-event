@@ -42,5 +42,5 @@ interface DispatcherInterface
      *
      * @return EventInterface
      */
-    public function dispatch($eventName, Event $event = null);
+    public function dispatch($eventName, EventInterface $event = null);
 }
