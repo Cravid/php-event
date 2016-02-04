@@ -38,8 +38,9 @@ interface DispatcherInterface
      * Dispatches a specific event by the given event name.
      *
      * @param string $eventName The name of the event.
+     * @param EventInterface $event Dispatched event instance, optional.
      *
-     * @return Event
+     * @return EventInterface
      */
-    public function dispatch($eventName);
+    public function dispatch($eventName, Event $event = null);
 }
