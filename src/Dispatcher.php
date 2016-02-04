@@ -77,7 +77,7 @@ class Dispatcher implements DispatcherInterface
     /**
      * {@inheritDoc}
      */
-    public function dispatch($eventName, Event $event = null)
+    public function dispatch($eventName, EventInterface $event = null)
     {
         if ($event === null) {
             $event = new Event();
