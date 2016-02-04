@@ -13,9 +13,9 @@ interface ListenerInterface
     /**
      * Executes the callback action.
      *
-     * @param Event
+     * @param Event The dispatched event instance.
      * @return mixed
      * @throws ListenerException if an issue in the callback execution occurs.
      */
-    public function notify(Event $event);
+    public function notify(EventInterface $event);
 }
