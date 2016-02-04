@@ -32,7 +32,7 @@ class Listener implements ListenerInterface
     /**
      * {@inheritDoc}
      */
-    public function notify(Event $event)
+    public function notify(EventInterface $event)
     {
         try {
             return call_user_func($this->callback, $event, $this);
